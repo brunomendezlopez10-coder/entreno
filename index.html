@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#0f1115">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Entreno">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <title>Entreno</title>
+</head>
+<body>
+  <header id="topbar">
+    <button id="back" class="icon-btn hidden" aria-label="Atrás">‹</button>
+    <h1 id="title">Hoy</h1>
+    <span id="top-action"></span>
+  </header>
+
+  <main id="view"></main>
+
+  <div id="active-banner" class="hidden"></div>
+  <div id="sheet" class="hidden"></div>
+
+  <nav id="tabs">
+    <button data-tab="today" class="active"><span>🏋️</span>Hoy</button>
+    <button data-tab="history"><span>📅</span>Historial</button>
+    <button data-tab="nutrition"><span>🍽️</span>Nutrición</button>
+    <button data-tab="progress"><span>📈</span>Progreso</button>
+    <button data-tab="study"><span>🔬</span>Estudio</button>
+  </nav>
+
+  <script src="plan.js"></script>
+  <script src="foods.js"></script>
+  <script src="study.js"></script>
+  <script src="anim.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
