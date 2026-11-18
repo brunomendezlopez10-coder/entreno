@@ -2,11 +2,12 @@
 
 Entreno es una **web app (PWA)**. Se instala desde Safari, sin App Store ni Xcode, no caduca y funciona sin conexión. Tus datos (entrenos, comidas, peso) **se guardan solo en tu iPhone**.
 
-Para instalarla, la app tiene que estar publicada en una dirección **https**. La forma gratuita y sencilla es **GitHub Pages**, y solo hay que hacerlo una vez.
+**Tu app ya está publicada en:** <https://brunomendezlopez10-coder.github.io/entreno/>
+(repositorio: <https://github.com/brunomendezlopez10-coder/entreno>). Puedes saltar directamente al paso 2.
 
 ---
 
-## 1. Publicar la app en GitHub Pages (≈10 min, desde el Mac)
+## 1. Publicar la app en GitHub Pages (ya hecho; por si algún día hay que repetirlo)
 
 1. Crea una cuenta gratuita en <https://github.com/signup> (si ya tienes una, inicia sesión).
 2. Pulsa **+ → New repository**.
@@ -52,7 +53,9 @@ Los datos viven en el iPhone. Si borras la app de la pantalla de inicio, **se bo
 
 Si cambias algún archivo:
 1. En `sw.js`, cambia `entreno-v1` por `entreno-v2` (luego v3, etc.).
-2. Vuelve a subir los archivos modificados a GitHub (**Add file → Upload files**).
+2. Súbelos desde la Terminal, en la carpeta de la app:
+   `cd /Applications/Entreno && git add -A && git commit -m "Actualización" && git push`
+   (o en github.com con **Add file → Upload files**).
 3. Abre la app en el iPhone con internet y ciérrala y ábrela una o dos veces para que se actualice. Tus datos no se pierden.
 
 ## Probarla en el Mac
